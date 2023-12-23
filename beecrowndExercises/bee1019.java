@@ -9,8 +9,8 @@ public class bee1019 {
         int n = sc.nextInt();
         segundos = n;
         horas = segundos / 3600;
-        minutos = segundos / 60;
-        segundos = n -(minutos * 60);
-        System.out.printf("%d : %d : %d", horas, minutos, segundos);
+        minutos = (n - (horas * 3600))/60;
+        segundos = n -(horas * 3600)-(minutos * 60);
+        System.out.printf("%d:%d:%d", horas, minutos, segundos);
     }
 }

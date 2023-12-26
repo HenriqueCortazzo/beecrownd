@@ -2,7 +2,7 @@ package beecrowndExercises;
 
 import java.util.Scanner;
 
-public class bee1022 {
+public class bee1035 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a, b, c, d, soma1, soma2;

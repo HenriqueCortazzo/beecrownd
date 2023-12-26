@@ -1,10 +1,5 @@
 package beecrowndExercises;
 
-<<<<<<< HEAD
-public class bee1021 {
-    public static void main(String[] args) {
-        
-=======
 import java.util.Scanner;
 
 public class bee1021 {
@@ -16,19 +11,18 @@ public class bee1021 {
         valorObtido = (valorObtido * 100) + 0.05;
         double restante = 0;
         for (int i = 0; i < notas.length; i++) {
-            int quantNotas = (int) ((int) valorObtido /(notas[i]*100));
+            int quantNotas = (int) ((int) valorObtido / (notas[i] * 100));
             if (quantNotas != 0) {
                 System.out.println(quantNotas + " nota(s) de R$ " + notas[i] + ",00");
-                valorObtido %= notas[i]*100;
+                valorObtido %= notas[i] * 100;
             }
         }
         for (double moeda : moedas) {
-            int quantMoedas = (int) (valorObtido /( moeda*100));
+            int quantMoedas = (int) (valorObtido / (moeda * 100));
             if (quantMoedas != 0) {
                 System.out.println(quantMoedas + " moeda(s) de R$ " + moeda);
-                valorObtido %= moeda*100;
+                valorObtido %= moeda * 100;
             }
         }
->>>>>>> bee1021
     }
 }

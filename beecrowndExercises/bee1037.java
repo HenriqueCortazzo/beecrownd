@@ -8,7 +8,7 @@ public class bee1037 {
         double valorRecebido = sc.nextDouble();
 
         for (int i = 0; i < 101; i++) {
-            if (valorRecebido > 0 && valorRecebido <= 25) {
+            if (valorRecebido >= 0 && valorRecebido <= 25) {
                 System.out.println("Intervalo [0,25]");
                 break;
             } else if (valorRecebido > 25 && valorRecebido <= 50) {

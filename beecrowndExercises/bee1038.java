@@ -12,21 +12,20 @@ public class bee1038 {
 
         switch (codigo) {
             case 1:
-                System.out.printf("Total: R$ %.2f", quantidade * valores[0]);
+                System.out.printf("Total: R$ %.2f\n", quantidade * valores[0]);
                 break;
             case 2:
-                System.out.printf("Total: R$ %.2f", quantidade * valores[1]);
+                System.out.printf("Total: R$ %.2f\n", quantidade * valores[1]);
                 break;
             case 3:
-                System.out.printf("Total: R$ %.2f", quantidade * valores[2]);
+                System.out.printf("Total: R$ %.2f\n", quantidade * valores[2]);
                 break;
             case 4:
-                System.out.printf("Total: R$ %.2f", quantidade * valores[3]);
+                System.out.printf("Total: R$ %.2f\n", quantidade * valores[3]);
                 break;
             case 5:
-                System.out.printf("Total: R$ %.2f", quantidade * valores[4]);
+                System.out.printf("Total: R$ %.2f\n", quantidade * valores[4]);
                 break;
-
         }
     }
 }

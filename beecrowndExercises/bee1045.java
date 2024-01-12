@@ -23,13 +23,14 @@ public class bee1045 {
         if (a >= b + c) {
             System.out.println("NAO FORMA TRIANGULO");
         }else {
-        if (Math.pow(a, 2) == Math.pow(b, 2) + Math.pow(c, 2)) {
+            double  v = Math.pow(b, 2) + Math.pow(c, 2);
+            if (Math.pow(a, 2) == v) {
             System.out.println("TRIANGULO RETANGULO");
         }
-        if (Math.pow(a, 2) > (Math.pow(b, 2) + Math.pow(c, 2))) {
+        if (Math.pow(a, 2) > v) {
             System.out.println("TRIANGULO OBTUSANGULO");
         }
-        if (Math.pow(a, 2) < (Math.pow(b, 2) + Math.pow(c, 2))) {
+        if (Math.pow(a, 2) < v) {
             System.out.println("TRIANGULO ACUTANGULO");
         }
         if (a == b && b == c) {

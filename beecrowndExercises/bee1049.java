@@ -28,14 +28,14 @@ public class bee1049 {
                 case "inseto":
                     if (palavra3.equalsIgnoreCase("hematofago")) {
                         System.out.println("pulga");
-                    } else System.out.println("lagarta   ");
-
+                    } else System.out.println("lagarta");
+                        break;
                 case "analideo":
                     if (palavra3.equalsIgnoreCase("hematofago")) {
                         System.out.println("sanguessuga");
                     } else System.out.println("minhoca");
             }
         }
-        
+        scanner.close();
     }
 }

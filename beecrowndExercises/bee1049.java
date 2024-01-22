@@ -30,10 +30,11 @@ public class bee1049 {
                         System.out.println("pulga");
                     } else System.out.println("lagarta");
                         break;
-                case "analideo":
+                case "anelideo":
                     if (palavra3.equalsIgnoreCase("hematofago")) {
                         System.out.println("sanguessuga");
                     } else System.out.println("minhoca");
+                    break;
             }
         }
         scanner.close();

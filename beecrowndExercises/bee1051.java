@@ -23,8 +23,13 @@ public class bee1051 {
             porcentagem8 = 1000 * ((double) 8 / 100);
             valorDoImposto = restanteImposto + porcentagem8;
             System.out.printf("R$ %.2f\n", valorDoImposto);
-        }
-        //System.out.printf("R$ %.2f\n", valorDoImposto);
+        }else if (salario>2000){
+            limite = 2000;
+            restante = salario - limite;
+            restanteImposto = restante * ((double) 8 / 100);
+            valorDoImposto = restanteImposto;
+            System.out.printf("R$ %.2f\n", valorDoImposto);
+        }else System.out.println("Isento");
     }
 }
 

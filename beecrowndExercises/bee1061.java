@@ -6,8 +6,14 @@ public class bee1061 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String dia, horas, minutos, segundos;
-        dia = scanner.next();
+        int diaInicio;
+        dia = scanner.nextLine();
         dia = dia.replace(" ", "");
-        char diaNumerico = dia.charAt(dia.length() - 1);
+        if (dia.length() > 4) {
+           diaInicio = Integer.parseInt(String.valueOf(dia.substring(dia.length() - 2)));
+        } else {
+           diaInicio = Integer.parseInt(String.valueOf(dia.charAt(dia.length() - 1)));
+        }
+        System.out.println(diaInicio);
     }
 }

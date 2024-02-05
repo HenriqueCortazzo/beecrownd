@@ -52,5 +52,36 @@ public class bee1061 {
         }else {
             System.out.printf("%d hora(s)\n",24);
         }
+
+
+        if (minutosInicio<minutosFinal){
+            int minTotais = horasInicio-horasFinal;
+            if (minTotais<0){
+                 int resultadoFinal = minTotais*(-1);
+                System.out.printf("%d minuto(s)\n",resultadoFinal);
+            }
+        }else if(minutosInicio>minutosFinal){
+            int minTotais = (minutosFinal+60)-minutosInicio;
+            System.out.printf("%d minuto(s)",minTotais);
+        }else {
+            System.out.printf("%d hora(s)\n",1);
+            System.out.printf("%d minutos(s)\n",0);
+        }
+
+
+      if (segundosInicio<segundosFinal){
+            int segTotais = segundosInicio-segundosFinal;
+            if (segTotais<0){
+                 int resultadoFinal = segTotais*(-1);
+                System.out.printf("%d segundo(s)\n",resultadoFinal);
+            }
+        }else if(segundosInicio>segundosFinal){
+            int segTotais = (segundosFinal+60)-segundosInicio;
+            System.out.printf("%d segundo(s)",segTotais);
+        }else {
+            System.out.printf("%d minuto(s)\n",1);
+          System.out.printf("%d segundos(s)\n",0);
+        }
+
     }
 }
